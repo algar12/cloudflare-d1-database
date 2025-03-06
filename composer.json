@@ -1,15 +1,14 @@
 {
-    "name": "ntanduy/cloudflare-d1-database",
+    "name": "pkg/cloudflare-d1-database",
     "description": "Easy configuration and setup for D1 Database connections in Laravel.",
     "keywords": [
-        "TanDuy03",
         "laravel",
         "Cloudflare",
         "D1",
         "Database"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/TanDuy03/cloudflare-d1-database",
+    "homepage": "https://github.com/algar12/cloudflare-d1-database",
     "authors": [
         {
             "name": "TanDuy03",
@@ -55,12 +54,12 @@
         "sort-packages": true
     },
     "suggest": {
-        "ext-pdo": "Extending the PDO driver for Cloudflare D1 is requireds."
+        "ext-pdo": "Extending the PDO driver for Cloudflare D1 is required."
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ntanduy\\CFD1\\D1ServiceProvider"
+                "Pkg\\CFD1\\D1ServiceProvider"
             ]
         }
     }
