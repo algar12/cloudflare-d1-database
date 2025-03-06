@@ -7,23 +7,30 @@ use Illuminate\Support\Str;
 
 class D1SchemaGrammar extends SQLiteGrammar
 {
-    public function compileTableExists($table)
+    public function __construct($connection = null)
+{
+    parent::__construct($connection);
+}
+
+
+public function compileTableExists($schema, $table)
+{
+    return Str::of(parent::compileTableExists($schema, $table))
+        ->replace('sqlite_master', 'sqlite_schema')
+        ->__toString();
+}
+
+
+    public function compileDropAllTables($schema = null)
     {
-        return Str::of(parent::compileTableExists($table))
+        return Str::of(parent::compileDropAllTables($schema))
             ->replace('sqlite_master', 'sqlite_schema')
             ->__toString();
     }
 
-    public function compileDropAllTables()
+    public function compileDropAllViews($schema = null)
     {
-        return Str::of(parent::compileDropAllTables())
-            ->replace('sqlite_master', 'sqlite_schema')
-            ->__toString();
-    }
-
-    public function compileDropAllViews()
-    {
-        return Str::of(parent::compileDropAllViews())
+        return Str::of(parent::compileDropAllViews($schema))
             ->replace('sqlite_master', 'sqlite_schema')
             ->__toString();
     }
