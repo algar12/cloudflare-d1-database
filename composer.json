@@ -1,5 +1,5 @@
 {
-    "name": "pkg/cloudflare-d1-database",
+    "name": "algar12/cloudflare-d1-database",
     "description": "Easy configuration and setup for D1 Database connections in Laravel.",
     "keywords": [
         "laravel",
@@ -11,9 +11,15 @@
     "homepage": "https://github.com/algar12/cloudflare-d1-database",
     "authors": [
         {
-            "name": "TanDuy03",
+            "name": ".",
             "email": "ng.tanduy261203@gmail.com",
             "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/algar12/cloudflare-d1-database.git"
         }
     ],
     "require": {
