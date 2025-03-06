@@ -1,7 +1,8 @@
 {
-    "name": "algar12/cloudflare-d1-database",
+    "name": "argal12/cloudflare-d1-database",
     "description": "Easy configuration and setup for D1 Database connections in Laravel.",
     "keywords": [
+        "TanDuy03",
         "laravel",
         "Cloudflare",
         "D1",
@@ -11,15 +12,9 @@
     "homepage": "https://github.com/algar12/cloudflare-d1-database",
     "authors": [
         {
-            "name": ".",
+            "name": "TanDuy03",
             "email": "ng.tanduy261203@gmail.com",
             "role": "Developer"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/algar12/cloudflare-d1-database.git"
         }
     ],
     "require": {
@@ -60,12 +55,12 @@
         "sort-packages": true
     },
     "suggest": {
-        "ext-pdo": "Extending the PDO driver for Cloudflare D1 is required."
+        "ext-pdo": "Extending the PDO driver for Cloudflare D1 is requireds."
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Pkg\\CFD1\\D1ServiceProvider"
+                "algar12\\CFD1\\D1ServiceProvider"
             ]
         }
     }
