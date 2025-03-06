@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "doctrine/dbal": "^3.0|^4.0",
         "illuminate/cache": "*",
         "illuminate/contracts": "*",
@@ -60,7 +60,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "algar12\\CFD1\\D1ServiceProvider"
+                "Ntanduy\\CFD1\\D1ServiceProvider"
             ]
         }
     }
